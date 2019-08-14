@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Zazma_Payment</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>OSL 3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Zazma payment option</summary>
+    <description>Zazma payment option</description>
+    <notes>Zazma payment option</notes>
+    <authors><author><name>BelVG LLC</name><user>belvg</user><email>store@belvg.com</email></author></authors>
+    <date>2014-04-30</date>
+    <time>10:00:50</time>
+    <contents><target name="magecommunity"><dir name="Belvg"><dir name="Zazma"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Form"><dir name="Field"><file name="Renderer.php" hash="a92fd92df6740ab0ab383f8893938942"/></dir></dir></dir></dir></dir><dir name="Payment"><dir name="Form"><file name="Logo.php" hash="04224064be5e2d8356cda2f48d7b9fe1"/><file name="Zazma.php" hash="503ee28c3d7cc6508b68e55bde93aa41"/></dir></dir></dir><file name="Exception.php" hash="5ac007031082530021684f295764d034"/><dir name="Helper"><file name="Config.php" hash="4020e0fcb4e607eee17087914116ef0d"/><file name="Data.php" hash="e035466620f1a622392e2177bbefdf77"/></dir><dir name="Model"><dir name="Api"><file name="Request.php" hash="2ce21a07aefa205a0db1fb6503780746"/></dir><file name="Api.php" hash="82233e7f3ba4c7b5a369f8bc78a34373"/><dir name="Payment"><file name="Zazma.php" hash="27290de66c90a9aa4470ade00a054792"/></dir></dir><dir name="controllers"><file name="CheckoutController.php" hash="2e86baf24d12e172011b9916846b1cb9"/></dir><dir name="etc"><file name="config.xml" hash="8351a2e3f2b5e8761fc490a570d459f6"/><file name="system.xml" hash="e288302c755eef6ad996881c87a094ca"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="belvg"><dir name="zazma"><dir name="payment"><dir name="form"><file name="logo.phtml" hash="eea3f947528ef5a4aee904606bcde62b"/><file name="zazma.phtml" hash="2c71b6d614a7c20e3be111eecba1d03e"/></dir></dir></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Belvg_Zazma.xml" hash="5b81891b74606731b8487cb98ee74ecf"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

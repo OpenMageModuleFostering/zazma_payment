@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Zazma_Payment",
+    "type": "magento-module",
+    "license": "OSL-3.0",
+    "homepage": "",
+    "description": "Zazma payment option",
+    "authors": [
+    {
+        "name": "BelVG LLC",
+        "email": "store@belvg.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

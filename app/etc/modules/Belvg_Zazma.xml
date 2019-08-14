@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Belvg_Zazma>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Checkout/>
+            </depends>
+            <version>1.0.0</version>
+        </Belvg_Zazma>
+    </modules>
+</config>
+

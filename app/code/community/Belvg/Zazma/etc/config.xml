@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Bluesnap_Buynow>
+            <version>1.0.0</version>
+        </Bluesnap_Buynow>
+    </modules>
+    <global>
+        <helpers>
+            <zazma>
+                <class>Belvg_Zazma_Helper</class>
+            </zazma>
+        </helpers>
+        <blocks>
+            <zazma>
+                <class>Belvg_Zazma_Block</class>
+            </zazma>
+        </blocks>
+        <models>
+            <zazma>
+                <class>Belvg_Zazma_Model</class>
+            </zazma>
+        </models>
+    </global>
+
+    <frontend>
+        <routers>
+            <zazma>
+                <use>standard</use>
+                <args>
+                    <module>Belvg_Zazma</module>
+                    <frontName>zazma</frontName>
+                </args>
+            </zazma>
+        </routers>
+    </frontend>
+
+    <default>
+        <payment>
+            <zazma>
+                <active>0</active>
+                <title><![CDATA[Zazma payment method]]></title>
+                <comment><![CDATA[You will be redirected to the secure payment page when you place an order.]]></comment>
+                <api_password backend_model="adminhtml/system_config_backend_encrypted" />
+                <sandbox>0</sandbox>
+                <verification>1</verification>
+                <allowspecific>1</allowspecific>
+                <specificcountry>US</specificcountry>
+                <min_order_total>300</min_order_total>
+                <max_order_total>5000</max_order_total>
+                <model>zazma/payment_zazma</model>
+            </zazma>
+        </payment>
+    </default>
+</config>
