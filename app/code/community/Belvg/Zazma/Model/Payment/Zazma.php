@@ -101,10 +101,17 @@ class Belvg_Zazma_Model_Payment_Zazma extends Mage_Payment_Model_Method_Abstract
             $data['subTotal'] = $quote->getSubtotalWithDiscount();
             $data['address'] = implode(',', $quote->getBillingAddress()->getStreet());
             $data['city'] = $quote->getBillingAddress()->getCity();
+            $data['state'] = 'n/a';
+
+            if ($regionId = $quote->getBillingAddress()->getRegionId()) {
+                $regionModel = Mage::getModel('directory/region')->load($regionId);
+                $data['state'] = $regionModel->getCode();
+            }
+
             $data['zip'] = $quote->getBillingAddress()->getPostcode();
             $data['companyName'] = $quote->getBillingAddress()->getCompany();
             $data['telephone'] = $quote->getBillingAddress()->getTelephone();
-
+            
             $api = Mage::getModel('zazma/api_request');
             /* @var $api Belvg_Zazma_Model_Api_Request */
 

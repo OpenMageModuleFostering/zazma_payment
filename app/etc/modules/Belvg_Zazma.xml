@@ -8,7 +8,7 @@
             <depends>
                 <Mage_Checkout/>
             </depends>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </Belvg_Zazma>
     </modules>
 </config>

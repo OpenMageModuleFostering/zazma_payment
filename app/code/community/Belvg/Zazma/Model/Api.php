@@ -71,8 +71,8 @@ class Belvg_Zazma_Model_Api
 
         $ch = curl_init();
 
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
+        //curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+        //curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
 
         if ($method == 'POST') {
             curl_setopt($ch, CURLOPT_POST, TRUE);
